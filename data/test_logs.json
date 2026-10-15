@@ -1,0 +1,67 @@
+[
+  {
+    "id": "LOG-001",
+    "expected_issue": "KI-001",
+    "log": "ERROR at setup of test_create_user: psycopg2.OperationalError: could not connect to server: Connection refused. Is the server running on host 'db' and accepting TCP/IP connections on port 5432?"
+  },
+  {
+    "id": "LOG-002",
+    "expected_issue": "KI-002",
+    "log": "FAILED tests/integration/test_sync.py::test_bulk_sync - TimeoutError: request to sync-service did not complete within 30.0s. (Re-run #2 of the same job passed.)"
+  },
+  {
+    "id": "LOG-003",
+    "expected_issue": "KI-003",
+    "log": "requests.exceptions.SSLError: HTTPSConnectionPool(host='staging-api.internal', port=443): Max retries exceeded (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired')))"
+  },
+  {
+    "id": "LOG-004",
+    "expected_issue": "KI-004",
+    "log": "ERROR at setup of test_webhook_retry: OSError: [Errno 98] Address already in use while binding mock server to 127.0.0.1:8081"
+  },
+  {
+    "id": "LOG-005",
+    "expected_issue": "KI-005",
+    "log": "Loading fixture 'full_traffic_dataset' (4.2 GB)... Killed. Process completed with exit code 137."
+  },
+  {
+    "id": "LOG-006",
+    "expected_issue": "KI-006",
+    "log": "OSError: [Errno 28] No space left on device: '/builds/agent-3/reports/junit-results.xml'"
+  },
+  {
+    "id": "LOG-007",
+    "expected_issue": "KI-007",
+    "log": "sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column users.last_login_at does not exist"
+  },
+  {
+    "id": "LOG-008",
+    "expected_issue": "KI-008",
+    "log": "test_api_orders.py: 212 passed. test_api_reports.py::test_monthly_export FAILED - AssertionError: expected status 200, got 401 Unauthorized (suite runtime 1h 14m)"
+  },
+  {
+    "id": "LOG-009",
+    "expected_issue": "KI-009",
+    "log": "pytest -n auto: FAILED test_counter.py::test_increment - assert 7 == 1. Passes when run alone with pytest test_counter.py"
+  },
+  {
+    "id": "LOG-010",
+    "expected_issue": "KI-010",
+    "log": "AttributeError: module 'yaml' has no attribute 'FullLoader' (fresh pip install on new runner image; no changes in our repository)"
+  },
+  {
+    "id": "LOG-011",
+    "expected_issue": "KI-011",
+    "log": "socket.gaierror: [Errno -2] Name or service not known while connecting to inventory-service.corp:9000"
+  },
+  {
+    "id": "LOG-012",
+    "expected_issue": "KI-012",
+    "log": "FAILED test_reports.py::test_report_is_dated_today - assert date(2026, 10, 15) == date(2026, 10, 14). Run started at 23:58 on a UTC runner."
+  },
+  {
+    "id": "LOG-013",
+    "expected_issue": null,
+    "log": "FAILED test_link_throughput.py::test_downlink_rate - AssertionError: expected throughput >= 950 Mbps, measured 910 Mbps"
+  }
+]
